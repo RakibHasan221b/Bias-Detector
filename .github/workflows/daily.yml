@@ -28,16 +28,24 @@ jobs:
           python -m playwright install --with-deps
 
       - name: Run BBC scraper
-        run: python bbc.py
+        run: |
+          echo "Running BBC scraper..."
+          python "DAILY ARTICLES/BBCDAILY.py"
 
       - name: Run Guardian scraper
-        run: python guardian.py
+        run: |
+          echo "Running Guardian scraper..."
+          python "DAILY ARTICLES/GUARDIANDAILY.py"
 
       - name: Run Daily Star scraper
-        run: python dailystar.py
+        run: |
+          echo "Running Daily Star scraper..."
+          python "DAILY ARTICLES/DAILYSTARDAILY.py"
 
       - name: Run New Age scraper
-        run: python newage.py
+        run: |
+          echo "Running New Age scraper..."
+          python "DAILY ARTICLES/NEWAGEDAILY.py"
 
       - name: Commit updated data
         run: |
