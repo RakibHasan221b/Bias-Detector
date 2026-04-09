@@ -12,7 +12,7 @@ logging.getLogger('urllib3').setLevel(logging.WARNING)
 
 # ========================= CONFIG =========================
 # ========================= CONFIG =========================
-BASE_PATH = r"C:\Users\rakib\Desktop\NEW desktop\THESIS WORK\Data"
+BASE_PATH = "./Data"
 os.makedirs(BASE_PATH, exist_ok=True)
 
 CSV_FILE = os.path.join(BASE_PATH, "guardian.csv")

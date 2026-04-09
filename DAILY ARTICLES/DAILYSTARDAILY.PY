@@ -11,7 +11,7 @@ import random
 
 # ========================= CONFIG =========================
 BASE_URL = "https://www.thedailystar.net/news/world"
-BASE_PATH = r"C:\Users\rakib\Desktop\NEW desktop\THESIS WORK\Data"
+BASE_PATH = "./Data"
 os.makedirs(BASE_PATH, exist_ok=True)
 
 OUTPUT_CSV = os.path.join(BASE_PATH, "dailystar_news.csv")

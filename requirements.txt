@@ -1,0 +1,10 @@
+pandas
+requests
+beautifulsoup4
+playwright
+trafilatura
+fake-useragent
+tqdm
+ftfy
+python-dateutil
+lxml
