@@ -14,7 +14,10 @@ import os
 
 # ========================= CONFIG =========================
 # YOUR EXACT PATHS
-BASE_PATH = "./Data"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_PATH = os.path.join(BASE_DIR, "..", "Data")
+BASE_PATH = os.path.abspath(BASE_PATH)
+
 os.makedirs(BASE_PATH, exist_ok=True)
 
 CSV_FILE = os.path.join(BASE_PATH, "bbc.csv")

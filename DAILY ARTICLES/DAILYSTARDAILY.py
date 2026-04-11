@@ -11,8 +11,10 @@ import random
 
 # ========================= CONFIG =========================
 BASE_URL = "https://www.thedailystar.net/news/world"
-BASE_PATH = "./Data"
-os.makedirs(BASE_PATH, exist_ok=True)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+BASE_PATH = os.path.join(BASE_DIR, "..", "Data")   # go one folder up
+BASE_PATH = os.path.abspath(BASE_PATH)
 
 OUTPUT_CSV = os.path.join(BASE_PATH, "dailystar_news.csv")
 

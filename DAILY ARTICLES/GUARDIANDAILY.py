@@ -11,8 +11,9 @@ import re
 logging.getLogger('urllib3').setLevel(logging.WARNING)
 
 # ========================= CONFIG =========================
-# ========================= CONFIG =========================
-BASE_PATH = "./Data"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_PATH = os.path.abspath(os.path.join(BASE_DIR, "..", "Data"))
+
 os.makedirs(BASE_PATH, exist_ok=True)
 
 CSV_FILE = os.path.join(BASE_PATH, "guardian.csv")

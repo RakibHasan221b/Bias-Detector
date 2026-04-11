@@ -15,8 +15,9 @@ import sys
 
 # ========================= CONFIG =========================
 BASE_URL = "https://www.newagebd.net/articlelist/31/world"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_PATH = os.path.abspath(os.path.join(BASE_DIR, "..", "Data"))
 
-BASE_PATH = "./Data"
 os.makedirs(BASE_PATH, exist_ok=True)
 
 OUTPUT_CSV = os.path.join(BASE_PATH, "newage_news.csv")
