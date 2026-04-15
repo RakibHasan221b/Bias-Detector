@@ -1,0 +1,15 @@
+# === Security - Never upload API key ===
+.env
+*.env
+.env.local
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+
+# Optional: Ignore log files
+*.log
