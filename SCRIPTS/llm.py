@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 # ================== LOAD ENVIRONMENT VARIABLES ==================
-load_dotenv()
+load_dotenv(dotenv_path=r"C:\Users\rakib\Desktop\NEW desktop\THESIS WORK\.env")
 
 # ---------------- OPENAI CLIENT ----------------
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
